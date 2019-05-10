@@ -1,6 +1,5 @@
 
 # arr = [10,7,-1,0,1,3,4,5,6,7]
-# arr = [0,-1]
 
 def bruteforcesolution(arr):
 	current_streak = 0
