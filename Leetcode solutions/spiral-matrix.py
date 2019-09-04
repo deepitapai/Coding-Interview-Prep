@@ -8,11 +8,11 @@ def spiralMatrix(matrix):
 		result.extend([matrix[u][i] for i in range(l,r)])
 		result.extend([matrix[i][r] for i in range(u,d)])
 		result.extend([matrix[d][i] for i in range(r,l,-1)])
-
+		result.extend([matrix[i][l] for i in range(d,u,-1)])
 		u,d,l,r = u+1,d-1,l+1,r-1
 
 	if u == d:
-		result.extend([matrix[u][i] for i in range(l,r)])
+		result.extend([matrix[u][i] for i in range(l,r+1)])
 	elif l == r:
 		result.extend([matrix[i][l] for i in range(u,d+1)])
 
